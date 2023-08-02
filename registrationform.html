@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form style="color: aquamarine;">
+        <fieldset>
+            <h2>registration form</h2>
+            <label for="name">name:</label><br>
+            <input type="text" id="name" placeholder="enter name" required> <br>
+            <label for="gmail">email id.</label> <br>
+            <input type="email" id="gmail" placeholder="asdgghg@gmail.com"><br>
+            <label for="mobile">mobile no:</label><br>
+            <input type="tel" id="mobile" placeholder="+91-enter mobile no." pattern="+91-[0-9]{10}" maxlength="10"> <br>
+            <label for="dropdown">applicant:</label><br>
+            <select name="name" id="dropdown" style="color: chocolate;">
+                <option value="student">student</option>
+                <option value="pro">profressional</option>
+                <option value="other">others</option>
+                <option value="about" selected hidden >about</option>
+            </select>
+            <h2>type of course</h2>
+            
+            <input type="checkbox" id="html" name="html" value="html" multiple accept=""><br>
+            <label for="html">html</label> <br>
+            <input type="checkbox" id="css" name="html" value="css" multiple><br>
+            <label for="css">CSS</label><br>
+             <input type="checkbox" id="javascript" name="html" value="javascript" multiple><br>
+             <label for="javascript">javascript</label><br><br>
+            
+             <label for="textarea" ><strong>about:</strong></label><br>
+             <textarea name="about" id="textarea" cols="30" rows="10" placeholder="something like achievements/work experience"></textarea>
+             <br><label for="files">upload resume:</label><br>
+             <input type="file" id="files" style="color: chocolate;"><br>
+             <input type="reset" ><br>
+             <input type="submit" value="register">
+             
+            
+             
+                    </fieldset>
+    </form>
+    
+      
+</body>
+</html> 

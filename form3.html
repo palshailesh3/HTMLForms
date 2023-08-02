@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+  <form method="get">
+      <h2>job application form</h2>
+      <fieldset>
+          <legend>personal detail</legend>
+          
+       <label for="name">name:</label>
+       <input type="text" id="name" placeholder="enter name" pattern="[a-zA-Z\s]+" autocomplete="on" required> 
+       <label for="gmail">email id.</label> 
+       <input type="email" id="gmail" placeholder="asdgghg@gmail.com" autocomplete="on" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+       <label for="mobile" >mobile no:</label>
+       <input type="tel" id="mobile" placeholder="+91-enter mobile no."  autocomplete="on" pattern="+91-[0-9]{10}" maxlength="10" required> 
+       <label for="dob">date of birth:</label>
+       <input type="date" name="date" id="dob">
+
+       <span> gender:
+       <label for="male">male</label>
+       <input type="radio" id="male" name="gender">
+       <label for="female">female</label>
+       <input type="radio" id="female" name="gender">
+       </span>
+      
+    <label for="country">nationality:</label>
+    <select name="country" id="country" required>
+        <option value="" selected hidden>country</option>
+        <option value="india">india</option>
+        <option value="australiya">australiya</option>
+        <option value="nepal">nepal</option>
+        <option value="bhutan">bhutan</option>
+        <option value="afganistan">afganistan</option>
+    </select>
+        </fieldset>
+        <fieldset>
+            <legend>address</legend>
+            <label for="state">state:</label>
+            <input type="text" id="state" name="state" autocomplete="on" required>
+            <label for="city">city:</label>
+            <input type="text" id="city" name="city" autocomplete="on">
+            <label for="stret">street:</label>
+            <input type="text" id="street" name="street"autocomplete="on">
+            <label for="pin">pincode:</label>
+            <input type="number" id="pin" name="pin" min="1" autocomplete="on" required>
+        </fieldset>
+        <fieldset>
+            <legend>other information</legend>
+            <label for="comments">comments:</label><br>
+            <textarea name="comments" id="comments" cols="60" rows="10" maxlength="250"></textarea>
+            <br><span>i agree to the terms of service
+                <input type="checkbox" name="agreement" id="agreement" required>
+            </span>
+        </fieldset><br>
+        <input type="submit" value="apply">
+        <input type="reset">
+  </form>  
+  
+  
+</fieldset> 
+
+</body>
+</html>
